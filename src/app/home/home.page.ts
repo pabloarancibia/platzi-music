@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  // https://ionicframework.com/docs/api/slides
+  
 
   constructor() {}
 
