@@ -27,7 +27,7 @@ export class LoginPage implements OnInit {
           type: 'minLength', message: 'Tamaño minimo 5 caracteres'
         }],
   };
-  errorMessage: string = '';
+  errorMessage = '';
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthenticateService,
@@ -57,6 +57,9 @@ export class LoginPage implements OnInit {
     .catch(err => {
       this.errorMessage = err;
     });
+  }
+  goToRegister(){
+    this.navCtrl.navigateForward('/register');
   }
 
 }
